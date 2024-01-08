@@ -5,43 +5,43 @@ export default {
         return{
             menus: [
                 {
-                    voce: "characters"
+                    voce: "Characters"
                 },
 
                 {
-                    voce: "comics"
+                    voce: "Comics"
                 },
 
                 {
-                    voce: "movies"
+                    voce: "Movies"
                 },
 
                 {
-                    voce: "tv"
+                    voce: "Tv"
                 },
 
                 {
-                    voce: "games"
+                    voce: "Games"
                 },
 
                 {
-                    voce: "collectibles"
+                    voce: "Collectibles"
                 },
 
                 {
-                    voce: "videos"
+                    voce: "Videos"
                 },
 
                 {
-                    voce: "fans"
+                    voce: "Fans"
                 },
 
                 {
-                    voce: "news"
+                    voce: "News"
                 },
 
                 {
-                    voce: "shop"
+                    voce: "Shop"
                 }
             ]
 
@@ -76,7 +76,7 @@ export default {
         ul{
             list-style: none;
             display: flex;
-            margin-left: 200px;
+            margin-left: 300px;
             margin-top: 10px;
 
                 li{
