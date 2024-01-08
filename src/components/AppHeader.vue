@@ -64,6 +64,7 @@ export default {
 </template>
 <style lang="scss">
     header {
+        max-width: 100%;
         height: 75px;
         display: flex;
         
@@ -74,6 +75,7 @@ export default {
         }
 
         ul{
+            max-width: 100%;
             list-style: none;
             display: flex;
             margin-left: 300px;

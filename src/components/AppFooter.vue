@@ -30,6 +30,8 @@ export default {
         position: relative;
         height: 400px;
         background-image: url(../img/footer-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         img{
             margin-left: 900px;
             height: 100%;
@@ -55,7 +57,8 @@ export default {
                 display: flex;
 
                     li{
-                        padding: 10px;
+                        max-width: 50px;
+                        padding: 20px;
                     }
                }
         }

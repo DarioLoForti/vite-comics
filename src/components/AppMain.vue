@@ -15,6 +15,7 @@ export default {
 </template>
 <style lang="scss">
     main{
+        max-width: 100%;
         background-color:#1C1C1C ;
         height: 100px;
 
