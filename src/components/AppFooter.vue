@@ -15,6 +15,8 @@ export default {
 </template>
 <style lang="scss">
     footer{
-        
+        img{
+            width: 100%;
+        }
     }
 </style>
