@@ -1,13 +1,26 @@
 <script>
 export default {
-    
+    name: "AppMain",
+    data(){
+        return{
+            
+        }
+    }
 }
 </script>
 <template lang="">
-    <div>
-        
-    </div>
+    <main>
+        <h2>Content goes here</h2>
+    </main>
 </template>
-<style lang="">
-    
+<style lang="scss">
+    main{
+        background-color:#1C1C1C ;
+        height: 200px;
+
+        h2{
+            color: white;
+            padding: 50px;
+        }
+    }
 </style>
