@@ -1,5 +1,9 @@
 <script>
+import AppBar from './AppBar.vue';
 export default {
+    components:{
+        AppBar
+    },
     name: "AppFooter",
     data(){
         return{
@@ -10,6 +14,7 @@ export default {
 </script>
 <template lang="">
     <footer>
+        <AppBar />
         <img src="../img/dc-logo-bg.png" alt="footer-bg">
         <div class="content">
             <button> sign-up now!</button>
@@ -25,10 +30,9 @@ export default {
         </div>
     </footer>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
     footer{
         position: relative;
-        height: 400px;
         background-image: url(../img/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -48,8 +52,9 @@ export default {
                     border: 1px solid #5382F9;
                     color: white;
                     background: none;
-                    padding: 10px 40px;
+                    padding: 20px;
                     margin-left: 100px ;
+                    font-size: 20px;
                 }
 
                ul{

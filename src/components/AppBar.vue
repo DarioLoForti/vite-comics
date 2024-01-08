@@ -1,0 +1,56 @@
+<script>
+export default {
+    name: "AppBar",
+    data(){
+        return{
+            
+        }
+    }
+}
+</script>
+<template lang="">
+    <div class="container">
+        <div class="content">
+            <img src="../img/buy-comics-digital-comics.png" alt="">
+            <h2>Digital Comics</h2>
+            <img src="../img/buy-comics-merchandise.png" alt="">
+            <h2>Dc merchandise</h2>
+            <img src="../img/buy-comics-subscriptions.png" alt="">
+            <h2>Subscription</h2>
+            <img src="../img/buy-comics-shop-locator.png" alt="">
+            <h2>Comic shop locator</h2>
+            <img src="../img/buy-dc-power-visa.svg" alt="">
+            <h2>Dc power visa</h2>
+        </div>
+    </div>
+</template>
+<style lang="scss" scoped>
+    .container{
+        display: flex;
+        justify-content: space-between;
+        height: 150px;
+        background-color: #5382F9;
+
+            .content{
+                margin-left:100px ;
+                display: flex;
+                max-width: 1000px;
+            }
+
+            img{
+               
+                height: 80%;
+                padding: 30px;
+                margin: 0px 20px;
+            }
+
+            h2{
+                color: white;
+                font-weight: 400;
+                padding-top: 30px;
+                font-size: 20px;
+
+
+            }
+    }
+</style>
