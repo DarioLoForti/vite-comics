@@ -85,10 +85,14 @@ export default {
 </script>
 <template lang="">
     <main>
+        <div class="jumbo">
+            
+        </div>
         <div class="container">
             <div class="comic-container">
                 <div class="card" v-for="comic, index in comics" :key="index">
                     <img :src="comic.thumb" alt="">
+                    <h4> {{comic.series }}</h4>
 
                 </div>
             </div>
@@ -98,20 +102,32 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/generals.scss' as *;
     main{
-        margin: 30px;
+        padding-bottom: 30px;
         background-color:#1C1C1C ;
         
-
-        .comic-container{
+        .jumbo{
+            height: 300px;
+            background-image: url(../img/jumbotron.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+        .comic-container{    
             display: flex;
             flex-wrap: wrap;
 
             .card{
-                width: calc(100% / 6 - 20px) ;
-                margin: 10px;
+                width: calc(100% / 6 - 40px) ;
+                margin: 20px;
+                height: 300px;
+                padding: 10px;
 
                 img{
-                    width: 100%;
+                    max-width: 100%;
+                    height: 100%;
+                }
+                h4{
+                    color: white;
                 }
             }
         }
