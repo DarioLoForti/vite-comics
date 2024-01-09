@@ -84,6 +84,7 @@ export default {
 </template>
 <style lang="scss" scoped>
 @use '../styles/generals.scss' as *;
+@use '../styles/partials/variables' as *;
     footer{
         position: relative;
         background-image: url(../img/footer-bg.jpg);
@@ -129,7 +130,7 @@ export default {
             
 
                 button{
-                    border: 1px solid #5382F9;
+                    border: 1px solid $my_color;
                     color: white;
                     background: none;
                     font-size: 20px;

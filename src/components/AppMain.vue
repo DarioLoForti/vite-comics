@@ -106,6 +106,7 @@ export default {
 </template>
 <style lang="scss" scoped>
 @use '../styles/generals.scss' as *;
+@use '../styles/partials/variables' as *;
     main{
         padding-bottom: 50px;
         background-color:#1C1C1C ;
@@ -124,7 +125,7 @@ export default {
             
         }
         button{
-            background-color: #5382F9;
+            background-color: $my_color;
             color: white;
             border-style: none;
             padding: 15px;

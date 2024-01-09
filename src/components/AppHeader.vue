@@ -68,6 +68,7 @@ export default {
 </template>
 <style lang="scss">
 @use '../styles/generals.scss' as *;
+@use '../styles/partials/variables' as *;
 
     .navbar{
         display: flex;
@@ -93,8 +94,8 @@ export default {
 
                     &.active,
                     &:hover{
-                        color: #5382F9;
-                        border-bottom: 5px solid #5382F9;
+                        color: $my_color;
+                        border-bottom: 5px solid $my_color;
                     }
                 }   
         }

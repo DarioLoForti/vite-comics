@@ -28,10 +28,11 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
 
 .bg{
     width: 100%;
-    background-color: #5382F9;
+    background-color: $my_color;
 }
     .container{
         display: flex;
