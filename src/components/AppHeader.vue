@@ -51,39 +51,47 @@ export default {
 </script>
 <template lang="">
    <header>
-    <img src="../img/dc-logo.png" alt="Logo">
-    <nav>
-        <ul>
-            <li v-for="(menu, index) in menus" :key="index">
-                {{menu.voce}}
-            </li>
-        </ul>
-    </nav>
-
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../img/dc-logo.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li v-for="(menu, index) in menus" :key="index" >
+                        {{menu.voce}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
    </header>
 </template>
 <style lang="scss">
-    header {
-        max-width: 100%;
-        height: 75px;
+@use '../styles/generals.scss' as *;
+
+    .navbar{
         display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
         
         img{
-            height: 75%;
-            margin-left: 100px;
-            margin-top: 10px;
+            width: 80px;
+            vertical-align: middle;
         }
 
+        
         ul{
-            max-width: 100%;
             list-style: none;
+            margin: 0;
             display: flex;
-            margin-left: 300px;
-            margin-top: 10px;
 
                 li{
+                    text-transform: uppercase;
+                    line-height: 80px;
                     font-weight: 600;
-                    padding: 10px;
+                    padding: 0 10px;
+
                 }   
         }
 

@@ -10,19 +10,21 @@ export default {
 </script>
 <template lang="">
     <main>
-        <h2> --> Content goes here <-- </h2>
+        <div class="container">
+            <h2> --> Content goes here <-- </h2>
+        </div>
     </main>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
+@use '../styles/generals.scss' as *;
     main{
-        max-width: 100%;
         background-color:#1C1C1C ;
         height: 100px;
 
         h2{
             color: white;
             padding: 30px;
-            margin-left: 100px;
+            
         }
     }
 </style>

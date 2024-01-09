@@ -32,7 +32,6 @@ export default {
         background-color: #5382F9;
 
             .content{
-                margin-left:100px ;
                 display: flex;
                 max-width: 1000px;
             }
@@ -40,7 +39,7 @@ export default {
             img{
                
                 height: 80%;
-                padding: 30px;
+                padding: 30px 20px;
                 margin: 0px 20px;
             }
 
