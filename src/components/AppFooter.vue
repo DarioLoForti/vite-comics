@@ -122,6 +122,7 @@ export default {
         .content{
             display: flex;
             justify-content: space-between;
+            align-items: center;
             
             height: 75px;
             width: 100%;
@@ -131,8 +132,8 @@ export default {
                     border: 1px solid #5382F9;
                     color: white;
                     background: none;
-                    padding: 20px;
                     font-size: 20px;
+                    height: 50%;
                 }
 
                ul{

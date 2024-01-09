@@ -16,15 +16,19 @@ export default {
 <style lang="scss" scoped>
 .card{
     width: calc(100% / 6 - 20px) ;
+    height: 200px;
     margin: 10px;
+    margin-bottom: 30px;
     padding: 10px;
 
     img{
-        max-width: 100%;
+        width: 100%;
         height: 100%;
     }
     h4{
+        margin-top: 10px;
         color: white;
+        text-transform: uppercase;
     }
 }
     

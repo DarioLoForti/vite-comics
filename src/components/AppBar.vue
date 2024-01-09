@@ -41,23 +41,23 @@ export default {
 
             .content{
                 display: flex;
-                max-width: 1000px;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%
             }
 
             img{
                
-                height: 80%;
+                height: 70%;
                 padding: 30px 20px;
                 margin: 0px 20px;
             }
 
             h2{
                 color: white;
-                font-weight: 400;
-                padding-top: 30px;
-                font-size: 20px;
-
-
+                font-weight: 500;
+                font-size: 14px;
+                text-transform: uppercase;
             }
     }
 </style>
