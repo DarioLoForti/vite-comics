@@ -1,5 +1,10 @@
 <script>
+import AppCard from './AppCard.vue';
 export default {
+
+    components:{
+        AppCard
+    },
     name: "AppMain",
     data(){
         return{
@@ -90,11 +95,7 @@ export default {
         </div>
         <div class="container">
             <div class="comic-container">
-                <div class="card" v-for="comic, index in comics" :key="index">
-                    <img :src="comic.thumb" alt="">
-                    <h4> {{comic.series }}</h4>
-
-                </div>
+                <AppCard v-for="comic, index in comics" :key="index" :comic="comic"/>
             </div>
         </div>
     </main>
@@ -116,19 +117,7 @@ export default {
             display: flex;
             flex-wrap: wrap;
 
-            .card{
-                width: calc(100% / 6 - 20px) ;
-                margin: 10px;
-                padding: 10px;
-
-                img{
-                    max-width: 100%;
-                    height: 100%;
-                }
-                h4{
-                    color: white;
-                }
-            }
+            
         }
     }
 </style>
