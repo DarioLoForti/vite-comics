@@ -57,7 +57,7 @@ export default {
             </div>
             <div class="menu">
                 <ul>
-                    <li v-for="(menu, index) in menus" :key="index" >
+                    <li v-for="(menu, index) in menus" :key="index" :class="index == 1 ? 'active' : ''">
                         {{menu.voce}}
                     </li>
                 </ul>
@@ -91,6 +91,11 @@ export default {
                     font-weight: 600;
                     padding: 0 10px;
 
+                    &.active,
+                    &:hover{
+                        color: #5382F9;
+                        border-bottom: 5px solid #5382F9;
+                    }
                 }   
         }
 
