@@ -102,7 +102,7 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/generals.scss' as *;
     main{
-        padding-bottom: 30px;
+        padding-bottom: 50px;
         background-color:#1C1C1C ;
         
         .jumbo{
@@ -117,9 +117,8 @@ export default {
             flex-wrap: wrap;
 
             .card{
-                width: calc(100% / 6 - 40px) ;
-                margin: 20px;
-                height: 300px;
+                width: calc(100% / 6 - 20px) ;
+                margin: 10px;
                 padding: 10px;
 
                 img{

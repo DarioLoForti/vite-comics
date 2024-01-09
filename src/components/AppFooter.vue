@@ -14,8 +14,8 @@ export default {
 </script>
 <template lang="">
     <footer>
+        <AppBar />
         <div class="container">
-            <AppBar />
             <div class="top-footer">
                 <div class="list-footer">
                     <h3> dc comics</h3>
@@ -62,16 +62,21 @@ export default {
                 </div>
             </div>
             
-            <div class="content">
-                <button> sign-up now!</button>
-                <div class="image">
-                    <ul>
-                        <li><img src="../img/footer-facebook.png" alt=""></li>
-                        <li><img src="../img/footer-twitter.png" alt=""></li>
-                        <li><img src="../img/footer-youtube.png" alt=""></li>
-                        <li><img src="../img/footer-pinterest.png" alt=""></li>
-                        <li><img src="../img/footer-periscope.png" alt=""></li>
-                    </ul>
+        </div>
+        <div class="bg-footer">
+            <div class="container">
+
+                <div class="content">
+                    <button> sign-up now!</button>
+                    <div class="image">
+                        <ul>
+                            <li><img src="../img/footer-facebook.png" alt=""></li>
+                            <li><img src="../img/footer-twitter.png" alt=""></li>
+                            <li><img src="../img/footer-youtube.png" alt=""></li>
+                            <li><img src="../img/footer-pinterest.png" alt=""></li>
+                            <li><img src="../img/footer-periscope.png" alt=""></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -116,11 +121,11 @@ export default {
         
         .content{
             display: flex;
-            background-color: #1C1C1C;
+            justify-content: space-between;
+            
             height: 75px;
             width: 100%;
-            position: absolute;
-            bottom: 0px;
+            
 
                 button{
                     border: 1px solid #5382F9;
@@ -135,10 +140,13 @@ export default {
                 display: flex;
 
                     li{
-                        max-width: 50px;
+                        max-width: 60px;
                         padding: 20px;
                     }
                }
+        }
+        .bg-footer{
+            background-color: #1C1C1C;
         }
     }
 </style>

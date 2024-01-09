@@ -9,27 +9,35 @@ export default {
 }
 </script>
 <template lang="">
-    <div class="container">
-        <div class="content">
-            <img src="../img/buy-comics-digital-comics.png" alt="">
-            <h2>Digital Comics</h2>
-            <img src="../img/buy-comics-merchandise.png" alt="">
-            <h2>Dc merchandise</h2>
-            <img src="../img/buy-comics-subscriptions.png" alt="">
-            <h2>Subscription</h2>
-            <img src="../img/buy-comics-shop-locator.png" alt="">
-            <h2>Comic shop locator</h2>
-            <img src="../img/buy-dc-power-visa.svg" alt="">
-            <h2>Dc power visa</h2>
+    <div class="bg">
+
+        <div class="container">
+            <div class="content">
+                <img src="../img/buy-comics-digital-comics.png" alt="">
+                <h2>Digital Comics</h2>
+                <img src="../img/buy-comics-merchandise.png" alt="">
+                <h2>Dc merchandise</h2>
+                <img src="../img/buy-comics-subscriptions.png" alt="">
+                <h2>Subscription</h2>
+                <img src="../img/buy-comics-shop-locator.png" alt="">
+                <h2>Comic shop locator</h2>
+                <img src="../img/buy-dc-power-visa.svg" alt="">
+                <h2>Dc power visa</h2>
+            </div>
         </div>
     </div>
 </template>
 <style lang="scss" scoped>
+
+.bg{
+    width: 100%;
+    background-color: #5382F9;
+}
     .container{
         display: flex;
         justify-content: space-between;
         height: 150px;
-        background-color: #5382F9;
+        
 
             .content{
                 display: flex;
