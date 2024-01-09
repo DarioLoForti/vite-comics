@@ -94,8 +94,12 @@ export default {
             
         </div>
         <div class="container">
+            <button>current series</button>
             <div class="comic-container">
                 <AppCard v-for="comic, index in comics" :key="index" :comic="comic"/>
+            </div>
+            <div class="btn">
+                <button>Load More</button>
             </div>
         </div>
     </main>
@@ -118,6 +122,22 @@ export default {
             flex-wrap: wrap;
 
             
+        }
+        button{
+            background-color: #5382F9;
+            color: white;
+            border-style: none;
+            padding: 15px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-left: 20px;
+            
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
         }
     }
 </style>
